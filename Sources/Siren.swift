@@ -433,7 +433,7 @@ private extension Siren {
         }
 
         if alertType != .none && !alertViewIsVisible {
-            alertController.show()
+            alertController.showAlert()
             alertViewIsVisible = true
             delegate?.sirenDidShowUpdateDialog(alertType: alertType)
         }
